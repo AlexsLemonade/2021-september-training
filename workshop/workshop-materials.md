@@ -21,6 +21,7 @@ In this training workshop, we will be using the following modules:
 
 - [Intro to R and the Tidyverse](https://github.com/AlexsLemonade/training-modules/tree/{{site.release_tag}}/intro-to-R-tidyverse)
 - [RNA-Seq](https://github.com/AlexsLemonade/training-modules/tree/{{site.release_tag}}/RNA-seq)
+- [Pathway Analysis](https://github.com/AlexsLemonade/training-modules/tree/{{site.release_tag}}/pathway-analysis)
 
 
 The layout of the `training-modules` folders follow a common general structure.
