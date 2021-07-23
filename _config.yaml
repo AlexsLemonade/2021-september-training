@@ -1,13 +1,13 @@
 title: CCDL Training
-training_title: MONTH-TOPIC
+training_title: 2021 September Training
 # The name of the repository (e.g., 2020-may-training)
 # We use training-specific-template to help with development
-repository: training-specific-template
+repository: 2021-september-training
 # Full URL to the repository
 # Again, using training-specific-template to aid in development
-repository_url: https://github.com/AlexsLemonade/training-specific-template
-start_date: YYYY-MM-DD
-end_date: YYYY-MM-DD
+repository_url: https://github.com/AlexsLemonade/2021-september-training
+start_date: 2021-09-20
+end_date: 2021-09-24
 # Specific release in AlexsLemonade/training-modules
 # We use master to make development easier
 release_tag: master
@@ -37,6 +37,6 @@ header_pages:
   - workshop/workshop-structure.md
   - workshop/workshop-materials.md
 author: Childhood Cancer Data Lab
-# email: user@site
+email: training@ccdatalab.org
 twitter_username: CancerDataLab
 github_username:  AlexsLemonade
