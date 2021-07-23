@@ -37,7 +37,7 @@ A tentative schedule for the September 2021 CCDL Virtual Training Workshop appea
 |             | [Consultation session](workshop-structure.md#consultation-sessions)  | [Slack channel](../virtual-setup/slack-procedures.md#general-use) |
 | 5:00 PM     | End             |             
 | **Day 4**   | **2021-09-23**  <br> [Introduction to Pathway Analysis](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/pathway-analysis/README.md) | | 
-| 12:00 PM    | [Introduction to Pathway Analysis Slides (pdf)](../slides/2021-03-25_Introduction_to_Pathway_Analysis.pdf) |  Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
+| 12:00 PM    | Introduction to Pathway Analysis |  Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
 | 12:30 PM    | Pathway analysis: [Over-representation analysis](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/pathway-analysis/01-overrepresentation_analysis.nb.html) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
 | 1:30 PM     | Pathway analysis: [Gene Set Enrichment Analysis](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/pathway-analysis/02-gene_set_enrichment_analysis.nb.html) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) | 
 | 2:30 PM     | Pathway analysis: [Gene Set Variation Analysis](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/pathway-analysis/03-gene_set_variation_analysis.nb.html) |  Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
