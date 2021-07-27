@@ -4,6 +4,12 @@ nav_title: Home
 permalink: /
 ---
 
+
+<p><img style = "padding: 0 15px; float: right;" src = "screenshots/alsf-ccdl-stacked-logo.png" width = "75"></p>
+<p style="margin-top: 20px;"> </p>
+<p>The <b>Childhood Cancer Data Lab (CCDL)</b> develops tools and training programs to empower childhood cancer researchers to utilize vast amounts of data to make more robust discoveries and cures. The Childhood Cancer Data Lab is an initiative of <b>[Alex's Lemonade Stand Foundation](http://alexslemonade.org/) (ALSF)</b>.
+
+
 ## {{site.training_title}}
 
 Dates: {{site.start_date}} through {{site.end_date}}
