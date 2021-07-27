@@ -105,7 +105,7 @@ First, use the new message button in the top right side corner of the Slack inte
 
 <img src = "screenshots/slack-compose-new-message.png" width="300">
 
-You are then able to search for the CCDL instructors – `Chante Bethell`, `Candace Savonen`, `Josh Shapiro` or `Jaclyn N. Taroni` – and compose your message.
+You are then able to search for the CCDL instructors – `Chante Bethell`, `Ally Hawkins`, `Jen O'Malley`, `Josh Shapiro` or `Jaclyn N. Taroni` – and compose your message.
 
 Course instructors may direct you to the training-specific channel for more general questions or to another instructor where appropriate.
 
