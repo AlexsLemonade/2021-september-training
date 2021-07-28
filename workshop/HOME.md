@@ -5,9 +5,10 @@ permalink: /
 ---
 
 
-<p><img style = "padding: 0 15px; float: right;" img src = "workshop/screenshots/alsf-ccdl-stacked-logo.png" width = "150"></p>
+<p><img style = "padding: 0 15px; float: right;" img src = "workshop/screenshots/alsf-ccdl-stacked-logo.png" width = "200"></p>
 <p style="margin-top: 20px;"> </p>
-<p>The <b>Childhood Cancer Data Lab (CCDL)</b> develops tools and training programs to empower childhood cancer researchers to utilize vast amounts of data to make more robust discoveries and cures. The Childhood Cancer Data Lab is an initiative of <b><a href="https://www.alexslemonade.org/" title="Alex's Lemonade Stand Foundation">Alex's Lemonade Stand Foundation (ALSF)</a></b>.
+<p>The <b><a href="https://www.ccdatalab.org/" title="Alex's Lemonade Stand Foundation">Childhood Cancer Data Lab (CCDL)</a></b> develops tools and training programs to empower childhood cancer researchers to utilize  data to make more robust discoveries. 
+The Childhood Cancer Data Lab is an initiative of <b><a href="https://www.alexslemonade.org/" title="Alex's Lemonade Stand Foundation">Alex's Lemonade Stand Foundation</a></b>.
 
 <h2>{{site.training_title}}</h2>
 
