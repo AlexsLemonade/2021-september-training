@@ -39,7 +39,7 @@ header_pages:
   - workshop/workshop-materials.md
   - workshop/resources-for-consultation-sessions.md
   - workshop/posting-errors-guidelines.md
-  - workshop/working-with-your-own-data.md
+  - working-with-your-data/working-with-your-own-data.md
 author: Childhood Cancer Data Lab
 email: training@ccdatalab.org
 twitter_username: CancerDataLab
