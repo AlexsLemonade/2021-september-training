@@ -1,6 +1,6 @@
 ---
 title: Working with your own data
-nav_title: Work with your Data
+nav_title: Using Your Data
 ---
 
 The goal of our workshop is to equip you to do initial analyses with your own data!
