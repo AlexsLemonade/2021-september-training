@@ -3,17 +3,17 @@ title: Virtual Workshop Schedule
 nav_title: Schedule
 ---
 
-A tentative schedule for the September 2021 CCDL Virtual Training Workshop appears below.
-⚠️ Not all links are working yet! ⚠️
+A schedule for the September 2021 CCDL Virtual Training Workshop appears below.
+
 
 *Note: All times are [EDT (UTC−04:00)](https://www.timeanddate.com/time/zones/edt)*
 <!--See an example from a past virtual workshop here: https://github.com/AlexsLemonade/2020-may-training/wiki/Schedule --> 
 
 | Time        | Topic                                          | Location |
 |-------------|------------------------------------------------|----------|
-| **Day 1**   | **2021-09-20** <br> [Introduction to R and the Tidyverse](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/README.md)
-| 12:00 PM    | Welcome, Introductions and Getting Started     | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
-| 1:00 PM     | [Introduction to base R](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/01-intro_to_base_R.nb.html) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
+| **Day 1**   | **2021-09-20** <br> [Introduction to R and the Tidyverse](https://github.com/alexslemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/README.md)
+| 12:00 PM    | Welcome, Introductions and Getting Started <br> [Intro slides (pdf)](../slides/2021-09-20_CCDL_Workshop_Intro.pdf)     | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
+| 1:00 PM     | [Introduction to RStudio and R (pdf)](../slides/2021-09-20_Intro_to_R.pdf) <br>[Introduction to base R](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/01-intro_to_base_R.nb.html) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
 | 2:30 PM     | [Introduction to ggplot2](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/02-intro_to_ggplot2.nb.html) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
 | 3:30 PM     | [Introduction to the tidyverse](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/intro-to-R-tidyverse/03-intro_to_tidyverse.nb.html) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
 | 4:30        | Questions and introduction to the exercises | Zoom: [Breakout Rooms](../virtual-setup/zoom-procedures.md#using-zoom-breakout-rooms) |
@@ -38,7 +38,7 @@ A tentative schedule for the September 2021 CCDL Virtual Training Workshop appea
 |             | [Consultation session](workshop-structure.md#consultation-sessions)  | [Slack channel](../virtual-setup/slack-procedures.md#general-use) |
 | 5:00 PM     | End             |             
 | **Day 4**   | **2021-09-23**  <br> [Introduction to Pathway Analysis](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/pathway-analysis/README.md) | | 
-| 12:00 PM    | Introduction to Pathway Analysis |  Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
+| 12:00 PM    | Pathway Analysis: [Introduction (pdf)](../slides/2021-09-23_Introduction_to_Pathway_Analysis.pdf) |  Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
 | 12:30 PM    | Pathway analysis: [Over-representation analysis](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/pathway-analysis/01-overrepresentation_analysis.nb.html) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
 | 1:30 PM     | Pathway analysis: [Gene Set Enrichment Analysis](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/pathway-analysis/02-gene_set_enrichment_analysis.nb.html) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) | 
 | 2:30 PM     | Pathway analysis: [Gene Set Variation Analysis](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/pathway-analysis/03-gene_set_variation_analysis.nb.html) |  Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
