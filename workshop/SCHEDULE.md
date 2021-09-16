@@ -12,7 +12,7 @@ A schedule for the September 2021 CCDL Virtual Training Workshop appears below.
 | Time        | Topic                                          | Location |
 |-------------|------------------------------------------------|----------|
 | **Day 1**   | **2021-09-20** <br> [Introduction to R and the Tidyverse](https://github.com/alexslemonade/training-modules/blob/2021-september/intro-to-R-tidyverse/README.md)
-| 12:00 PM    | [Welcome, Introductions and Getting Started](../slides/2021-09-20_CCDL_Workshop_Intro.pdf)     | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
+| 12:00 PM    | Welcome, Introductions and Getting Started <br> [Intro slides (pdf)](../slides/2021-09-20_CCDL_Workshop_Intro.pdf)     | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
 | 1:00 PM     | [Introduction to base R](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/2021-september/intro-to-R-tidyverse/01-intro_to_base_R.nb.html) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
 | 2:30 PM     | [Introduction to ggplot2](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/2021-september/intro-to-R-tidyverse/02-intro_to_ggplot2.nb.html) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
 | 3:30 PM     | [Introduction to the tidyverse](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/2021-september/intro-to-R-tidyverse/03-intro_to_tidyverse.nb.html) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
