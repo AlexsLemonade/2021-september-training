@@ -1,0 +1,207 @@
+---
+title: "Day 1: Intro to R & tidyverse Supplementary Notebook"
+author: Josh Shapiro
+date: 2021-09-20
+output:   
+  html_notebook: 
+    toc: true
+    toc_float: true
+---
+
+
+## Introduction
+
+This notebook addresses some questions that came up after the first day of the CCDL workshop.
+
+- [Installing packages](#installing-packages)
+- [Logical vectors](#logical-vectors)
+
+### How to use this notebook: 
+
+While it is fine to just read this page as is, if you want to get the Rmarkdown notebook itself to work with, you can follow the following steps:
+
+1. Click the `Code` button in the upper right of this page and choose `Download Rmd` to save this notebook (`2021-09-20_muddiest_points.Rmd`) to your computer.
+If you have RStudio installed on your computer, you can then open the file directly.
+
+Otherwise you can add it to the CCDL RStudio server to work with it there with the following additional steps:
+
+2. Navigate to RStudio server.  
+3. In the `File` pane, navigate to `training-modules/intro-to-R-tidyverse`.     
+4. Click the `Upload` button in the `File` pane.   
+5. Click `Choose file` and find this `Rmd` file on your computer, then click `OK`  
+
+
+Now you can open up this file and run it on the Server. 
+
+## Installing packages
+
+We do not explicitly cover package installation during this training, mostly for time reasons, but also because we want to make sure everything is there and ready to go!
+
+But of course when you go to work on your own machine, some R packages may not be installed, so you may need to know how to install them!
+Usually, this is pretty straightforward, and we will cover the most common situations here.
+
+There are two main sources for R packages that we use, [CRAN](https://cran.r-project.org/) and [Bioconductor](https://bioconductor.org/).
+Installation of packages from the two sources is slightly different.
+
+### CRAN packages
+
+Most general use packages (not biology-specific) are available through CRAN, the Comprehensive R Archive Network.
+To install a package from CRAN, you use the `install.packages()` function, which will install the requested package(s) as well as any packages they might depend on.
+So if I wanted to install (or update) the `tidyverse` package and all of its dependencies, I would use the following command:
+
+```{r, eval = FALSE}
+install.packages("tidyverse")
+```
+
+If I had more than one package to install, I might use a vector of the package names (each enclosed by quotes):
+```{r eval = FALSE}
+install.packages(c("magrittr", "dplyr", "palmerpenguins"))
+```
+
+The first time you use `install.packages()` you may be prompted (in the Console) to choose a "mirror". 
+You will need to enter any responses in the console.
+Using option `0`, the "cloud", is usually safe, but you can choose another location if you prefer.
+
+If you are using RStudio, there is also an "Install" button in the `Packages` tab, which will prompt you to enter the packages you want to install, but this will only work with CRAN packages.
+
+### Bioconductor packages
+
+To install [Bioconductor](https://bioconductor.org/) packages, you need to use a specialized installation function from the `BiocManager` package.
+So the first step is to install that package from CRAN:
+
+```{r eval = FALSE}
+install.packages("BiocManager")
+```
+
+Once that is installed, you can use `BiocManager::install()` to install any packages that are part of Bioconductor and their dependencies. 
+(In fact you could use this always: it will find CRAN packages as well!)
+
+```{r, eval = FALSE}
+BiocManager::install("DESeq2")
+```
+
+`BiocManager::install()` tends to be a bit more chatty than the base R installation; be on the lookout for prompts that you need to respond to in the console.
+
+## Logical vectors
+
+I briefly talked about logical (Boolean) vectors during the first session, but they can definitely be confusing at times, so here I will go into a bit more depth. 
+
+First off, what is a logical vector? A logical vector is one that contains only the values `TRUE` and `FALSE` (and potentially `NA`).
+Notice the all caps: R requires this. 
+
+So the simplest way to create a logical vector is just like another vector, using `c()` but only those values:
+
+```{r}
+my_bool <- c(TRUE, FALSE, FALSE, TRUE)
+my_bool
+class(my_bool)
+```
+(Full disclosure, you _can_ use `T` and `F` in addition to `TRUE` and `FALSE`, but this is a bad idea, because it is possible to overwrite those abbreviations like normal variable names. `F <- TRUE` is a perfectly valid statement, even though it can wreak havoc on sloppy code.)
+
+
+That isn't too useful, generally, because we usually want to create our logical vectors based on some data. To that we will tend to use one of a few comparison or logical operators:
+
+Starting with the comparisons:
+
+* `==`: equal to
+* `<`: less than
+* `<=`:  less than or equal to 
+* `>`: greater than
+* `>=`: greater than or equal to
+* `%in%` : is a member of some other vector
+
+Let's say we have a vector of (semi) random numbers. 
+
+```{r}
+rand_nums <- c(0.74, -0.83, 0.42, 0.29, -0.825, 0.25, 1.68)
+```
+
+We can use comparisons to create new logical vectors:
+
+```{r}
+negative <- rand_nums < 0
+negative
+```
+
+Or we can test which of some character vectors match a particular value:
+```{r}
+words <- c("hello", "goodbye", "howdy", "aloha", "cat")
+is_cat <- words == "cat"
+is_cat
+```
+
+or are in a set of known values: 
+```{r}
+greetings <- c("aloha", "hello", "hi", "hola", "howdy")
+is_greeting <- words %in% greetings
+is_greeting
+```
+
+We can also modify combine multiple Boolean vectors with logical statements to get new Boolean vectors.
+
+* `!`: not (inverts `TRUE` and `FALSE` )
+* `|` : logical **or** - if either of the elements are `TRUE`, this gives `TRUE`
+* `&` : logical **and** - if both of the elements are `TRUE`, this gives `TRUE`
+
+These logical operators will act on each of the elements of a vector, or each pair from two vectors (note that I am not saving these to new vectors, but you could!):
+
+```{r}
+!is_greeting
+```
+
+```{r}
+# Is it a greeting or is it a cat, because either way, we should say hi back
+is_greeting | is_cat
+```
+
+
+Once we have a logical vector with the values we are after, we can use them in selections, much like we might use the position numbers, to get only those values that gave us `TRUE` in whatever comparison we were doing:
+
+```{r}
+greet_words <- words[is_greeting]
+greet_words
+```
+
+We can also use them in many other places, such as the `dplyr::filter()` statements we covered in lecture.
+
+For example, if we want to filter the penguin data to just female Adelie penguins, we could do the following):
+
+```{r}
+library(magrittr) # we'll use pipes here, so we need to load magrittr
+
+penguins <- palmerpenguins::penguins
+
+is_adelie_female <- penguins$species == "Adelie" & penguins$sex == "female"
+
+adelie_females <- penguins %>% 
+  dplyr::filter(is_adelie_female)
+adelie_females
+```
+In practice, we probably wouldn't make a separate variable, and we would let the dplyr::filter() function apply the `&` as it does by default for separate conditions, something like this:
+
+```{r}
+adelie_males <- penguins %>% 
+  dplyr::filter(species == "Adelie",
+                sex == "male")
+adelie_males
+```
+
+However, if we needed an "or" (`|`) statement, we would need to use that explicitly:
+```{r}
+adelie_chinstrap <- penguins %>% 
+  dplyr::filter(species == "Adelie" | species == "Chinstrap")
+adelie_chinstrap
+```
+
+
+
+
+## Session Info
+```{r}
+sessionInfo()
+```
+
+
+
+
+
