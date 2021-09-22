@@ -1,0 +1,121 @@
+---
+title: "Day 2: Intro to RNA-seq Supplementary Notebook"
+author: Ally Hawkins
+date: 2021-09-21
+output:   
+  html_notebook: 
+    toc: true
+    toc_float: true
+---
+
+## Introduction
+
+This notebook addresses some questions that came up after the second day of the CCDL workshop.
+
+- [When to use quotations](#when-to-use-quotations)
+
+### How to use this notebook: 
+
+While it is fine to just read this page as is, if you want to get the Rmarkdown notebook itself to work with, you can follow the following steps:
+
+1. Click the `Code` button in the upper right of this page and choose `Download Rmd` to save this notebook (`2021-09-21_muddiest_points.Rmd`) to your computer.
+If you have RStudio installed on your computer, you can then open the file directly.
+
+Otherwise you can add it to the CCDL RStudio server to work with it there with the following additional steps:
+
+2. Navigate to RStudio server.  
+3. In the `File` pane, navigate to `training-modules/RNA-seq`.     
+4. Click the `Upload` button in the `File` pane.   
+5. Click `Choose file` and find this `Rmd` file on your computer, then click `OK`  
+
+
+## When to use quotations
+
+Some questions came up in the slack about when to use and when not to use quotations in R. 
+In general, the rule of thumb is that quotations are reserved for characters and strings (i.e. a word or set of words) only. 
+When you put something in quotation marks, it's telling R to interpret the quotation marks as a string of characters.
+
+Examples of places where you do NOT include quotations include: 
+
+1. Assigning something to a variable - variable names should NOT be in quotation marks. 
+2. When trying to access different columns of a dataframe if using a function from `tidyverse` such as `filter()` or `select()`, column names should NOT be in quotation marks. 
+
+The following are a few examples of when you would use quotation marks: 
+
+To assign a variable to a character or word, the variable will NOT be in quotes, but the string will be in quotes.
+
+```{r}
+# string is the variable being assigned 
+string <- "this is a string"
+```
+
+When creating a vector of multiple strings, each element of the vector should be in quotes, but the variable that the vector is being assigned to should NOT be in quotes. 
+
+```{r}
+# each element in the vector is a string so should be in quotes 
+animals_vector <- c("cat", "dog", "pig", "cow", "bird")
+```
+
+If you are checking to see if a vector contains a string, the string that you are searching for must be in quotes, but the vector is a variable and will not be in quotes. 
+
+```{r}
+"cat" %in% animals_vector
+```
+
+Let's turn our vector into a one column data frame and use tidyverse to show you when you would and wouldn't use quotes there. 
+
+```{r}
+animals_df <- data.frame(animals = animals_vector)
+```
+
+Now, if we are trying to filter our dataframe to only contain rows that have values equal to the string "cat", we are going to use `dplyr::filter()`. 
+Here, we want to give `dplyr::filter()` the column that we are filtering on, in this case, animals, and then the value that we are looking for in that column, in this example, "cat". 
+
+To do this, the column name should NOT be in quotes, but the value that we are trying to match should be in quotes. 
+The reason that "cat" should be in quotes is because we are trying to filter for rows that contain the string "cat", so we are indicating that it is a string by putting the quotation marks around it. 
+
+Let's test this out. 
+
+```{r}
+animals_df %>%
+  dplyr::filter(animals == "cat")
+```
+Here, you should see only one row with the value "cat". 
+
+What if we hadn't used quotes around "cat"? 
+
+```{r}
+animals_df %>%
+  dplyr::filter(animals == cat)
+```
+You should see an error here and that's because it's searching for the variable cat, since we didn't put quotes around it to indicate that it was a string. 
+
+If we wanted to do it this way, we would have to make sure we assign `cat` to the string we are searching for first, and then filter. 
+
+```{r}
+cat = "cat"
+
+animals_df %>%
+  dplyr::filter(animals == cat)
+```
+We see this works, but doesn't make much sense to do with just one string. 
+Let's try to do our filtering again, but this time we want to find anything that matches either a "cat" or "dog". 
+
+```{r}
+# first we make a variable that is a vector containing the strings we are interested in 
+pets_vector <- c("cat", "dog")
+
+# then search for animals that are in that vector 
+animals_df %>%
+  dplyr::filter(animals %in% pets_vector)
+```
+Here, we see that by using the `%in%` operator we are searching for any values in the animals column that match any values in `pets_vector`. 
+We used quotes in `pets_vector` to indicate that each of those values are strings, but if we had not done that, it would have assumed each of those were a variable and would have thrown an error since we did not assign dog to a variable. 
+
+In general, a good rule of thumb is to reserve quotation marks for use only when referring to a string or character and not when referring to a variable.
+
+
+## Session Info
+```{r}
+sessionInfo()
+```
