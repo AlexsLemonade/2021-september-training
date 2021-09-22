@@ -32,7 +32,7 @@ Otherwise you can add it to the CCDL RStudio server to work with it there with t
 ## When to use quotations
 
 Some questions came up in the slack about when to use and when not to use quotations in R. 
-In general, the rule of thumb is that quotations are reserved for characters and strings (i.e. a word or set of words) only. 
+In general, the rule of thumb is that quotations are reserved for characters and strings (i.e., a word or set of words) only. 
 When you put something in quotation marks, it's telling R to interpret the quotation marks as a string of characters.
 
 Examples of places where you do NOT include quotations include: 
