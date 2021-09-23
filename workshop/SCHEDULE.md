@@ -43,7 +43,7 @@ A schedule for the September 2021 CCDL Virtual Training Workshop appears below.
 | 1:30 PM     | Pathway analysis: [Gene Set Enrichment Analysis](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/pathway-analysis/02-gene_set_enrichment_analysis.nb.html) | Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) | 
 | 2:30 PM     | Pathway analysis: [Gene Set Variation Analysis](https://htmlpreview.github.io/?https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/pathway-analysis/03-gene_set_variation_analysis.nb.html) |  Zoom: [Main Session](../virtual-setup/zoom-procedures.md#joining-a-zoom-call) |
 | 3:30 PM     | Questions and introduction to the exercise | Zoom: [Breakout Rooms](../virtual-setup/zoom-procedures.md#using-zoom-breakout-rooms) |
-|             | Exercises: Pathway analysis| Zoom: [Breakout Rooms](../virtual-setup/zoom-procedures.md#using-zoom-breakout-rooms) | 
+|             | Exercises: Pathway analysis <br> [ORA](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/pathway-analysis/exercise_01-ora.Rmd) <br> [GSEA](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/pathway-analysis/exercise_02-gsea.Rmd) <br> [GSVA](https://github.com/AlexsLemonade/training-modules/blob/{{site.release_tag}}/pathway-analysis/exercise_03-gsva.Rmd) <br>| Zoom: [Breakout Rooms](../virtual-setup/zoom-procedures.md#using-zoom-breakout-rooms) | 
 |             | [Consultation session](workshop-structure.md#consultation-sessions) | [Slack channel](../virtual-setup/slack-procedures.md#general-use)|
 | 5:00 PM     | End || 
 | **Day 5**   | **2021-09-24**  <br> _**Consultation and Presentations**_ |     
